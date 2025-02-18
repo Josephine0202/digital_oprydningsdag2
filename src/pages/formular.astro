@@ -1,3 +1,53 @@
 ---
-
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Link from '../components/Link.astro';
+import Header from '../components/Header.astro';
 ---
+
+<MainLayout>
+    <section id="køb_bogen" class="max-w-lg mx-auto mt-32 mb-32 p-4 border border-black">
+  <h2 class="text-4xl font-bold pb-4">Køb bogen nu!</h2>
+  <form class="space-y-4 grid grid-cols-1 gap-6">
+    <div>
+      <span>Betaling:</span>
+      <input type="radio" id="forud" name="levering" checked="checked">
+      <label for="forud">Forudbetaling</label>
+      <input type="radio" id="kredit" name="levering">
+      <label for="kredit">Kredit</label>
+      <input type="radio" id="kontant" name="levering">
+      <label for="kontant">Kontant</label>
+    </div>
+
+    <div class="grid gap-3">
+      <label for="navn">Navn:</label>
+      <input type="text" id="navn" name="navn" placeholder="Anders And">
+    </div>
+
+    <div class="grid gap-3">
+      <label for="adresse">Adresse:</label>
+      <input type="text" id="adresse" name="adresse" placeholder="Paradisæblevej 8">
+    </div>
+
+    <div class="grid gap-3 grid-cols-6">
+      <label for="postnummer" class="col-span-6">Postnummer & by:</label>
+      <input type="text" id="postnummer" name="postnummer" class="col-span-2" placeholder="0900">
+      <input type="text" id="bynavn" name="bynavn" disabled class="col-span-4" placeholder="Andeby C">
+    </div>
+
+    <div class="grid gap-3">
+      <label for="telefon">Telefon:</label>
+      <input type="tel" id="telefon" name="telefon" placeholder="555-555">
+    </div>
+
+    <div>
+      <input type="checkbox" id="nyhedsbrev" name="nyhedsbrev">
+      <label for="nyhedsbrev">Ja tak til nyhedsbreve og tilbud</label>
+    </div>
+
+    <div class="flex justify-end animate-pulse">
+      <Button variant="primary" size="small">Til betaling</Button>
+    </div>
+  </form>
+</section>
+</MainLayout>
