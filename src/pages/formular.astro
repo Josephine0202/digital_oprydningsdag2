@@ -6,48 +6,51 @@ import Header from '../components/Header.astro';
 ---
 
 <MainLayout>
-    <section id="køb_bogen" class="max-w-lg mx-auto mt-32 mb-32 p-4 border border-black">
-  <h2 class="text-4xl font-bold pb-4">Køb bogen nu!</h2>
-  <form class="space-y-4 grid grid-cols-1 gap-6">
-    <div>
-      <span>Betaling:</span>
-      <input type="radio" id="forud" name="levering" checked="checked">
-      <label for="forud">Forudbetaling</label>
-      <input type="radio" id="kredit" name="levering">
-      <label for="kredit">Kredit</label>
-      <input type="radio" id="kontant" name="levering">
-      <label for="kontant">Kontant</label>
-    </div>
+    <section id="registrering" class="max-w-lg mx-auto mt-32 mb-32 p-6 border border-[#3C5A14] bg-[#EEEDE5] shadow-md">
+        <h2 class="text-lg font-bold text-center text-[#3C5A14] mb-8">REGISTRER DIN DIGITALE OPRYDNING</h2>
+        
+        <form class="space-y-8">
+            <div class="grid gap-8">
+                <input type="text" id="fornavn" name="fornavn" placeholder="Fornavn" class="w-full border-b border-gray-400 focus:outline-none p-2">
+                <input type="text" id="efternavn" name="efternavn" placeholder="Efternavn" class="w-full border-b border-gray-400 focus:outline-none p-2">
+                <input type="email" id="email" name="email" placeholder="Email" class="w-full border-b border-gray-400 focus:outline-none p-2">
+                <input type="text" id="land" name="land" placeholder="Land" class="w-full border-b border-gray-400 focus:outline-none p-2">
+                <input type="text" id="organisation" name="organisation" placeholder="Organisationsnavn (valgfrit)" class="w-full border-b border-gray-400 focus:outline-none p-2">
+            </div>
 
-    <div class="grid gap-3">
-      <label for="navn">Navn:</label>
-      <input type="text" id="navn" name="navn" placeholder="Anders And">
-    </div>
+            <div>
+                <label class="block text-gray-700">Antal deltagere</label>
+                <select class="w-full border border-gray-300 p-2 rounded focus:outline-none">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
 
-    <div class="grid gap-3">
-      <label for="adresse">Adresse:</label>
-      <input type="text" id="adresse" name="adresse" placeholder="Paradisæblevej 8">
-    </div>
+            <div>
+                <label class="block text-gray-700">Antal slettet (i GB)</label>
+                <select class="w-full border border-gray-300 p-2 rounded focus:outline-none">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>5</option>
+                    <option>10</option>
+                </select>
+            </div>
 
-    <div class="grid gap-3 grid-cols-6">
-      <label for="postnummer" class="col-span-6">Postnummer & by:</label>
-      <input type="text" id="postnummer" name="postnummer" class="col-span-2" placeholder="0900">
-      <input type="text" id="bynavn" name="bynavn" disabled class="col-span-4" placeholder="Andeby C">
-    </div>
+            <div class="flex items-center gap-2">
+                <input type="checkbox" id="terms" class="w-4 h-4">
+                <label for="terms" class="text-sm text-gray-700">*Jeg er enig med Digital Oprydningsdags vilkår & betingelser</label>
+            </div>
+            
+            <div class="flex items-center gap-2">
+                <input type="checkbox" id="newsletter" class="w-4 h-4">
+                <label for="newsletter" class="text-sm text-gray-700">Ja tak til nyhedsbreve fra Digital Oprydningsdag</label>
+            </div>
 
-    <div class="grid gap-3">
-      <label for="telefon">Telefon:</label>
-      <input type="tel" id="telefon" name="telefon" placeholder="555-555">
-    </div>
-
-    <div>
-      <input type="checkbox" id="nyhedsbrev" name="nyhedsbrev">
-      <label for="nyhedsbrev">Ja tak til nyhedsbreve og tilbud</label>
-    </div>
-
-    <div class="flex justify-end animate-pulse">
-      <Button variant="primary" size="small">Til betaling</Button>
-    </div>
-  </form>
-</section>
+            <div class="mt-10 flex justify-center">
+                <Button variant="primary" size="medium" class="bg-[#3C5A14] text-white py-5 px-6 rounded-lg hover:bg-green-900 transition">Registrer</Button>
+            </div>
+        </form>
+    </section>
 </MainLayout>
