@@ -6,74 +6,69 @@ import Header from "../components/Header.astro";
 ---
 
 <MainLayout>
-  <div class="flex flex-col items-center text-center space-y-6">
-    <img src="../assets/images/earth.webp" alt="earth" class="w-32" />
-    <h2 class="text-xl font-bold uppercase text-gray-700">
-      RESSOURCER OG MATERIALER
-    </h2>
+  <img src="../assets/images/earth.webp" alt="earth" class="mx-auto mb-8" />
+  <h2 class="text-center text-2xl font-bold mb-6">RESSOURCER OG MATERIALER</h2>
 
-    <div class="grid grid-cols-3 gap-8 text-gray-700">
-      <!-- Retningslinier -->
-      <div class="flex flex-col items-center">
-        <h3 class="text-lg font-semibold text-green-700">Retningslinier</h3>
-        <Link
+  <div class="grid grid-cols-3 gap-8 text-center max-w-4xl mx-auto">
+    <!-- Retningslinier -->
+    <div>
+      <h3 class="text-lg font-semibold text-green-700 mb-2">Retningslinier</h3>
+      <div class="flex flex-col space-y-2">
+        <a
           href="https://drive.google.com/file/d/136q24Z0iexgvnWk4Z_GIGAYBtV3D49l4/view"
-          target="_blank"
-          class="underline hover:text-gray-500">Guidelines for individuals</Link
+          class="underline hover:text-gray-500">Guidelines for individuals</a
         >
-        <Link
+        <a
           href="https://drive.google.com/file/d/1ZUIJl_EztcJmYF7GVDFN1LMPRtqM_7nM/view"
-          class="underline hover:text-gray-500">Guidelines for Companies</Link
+          class="underline hover:text-gray-500">Guidelines for companies</a
         >
-        <Link
+        <a
           href="https://drive.google.com/file/d/1dDw_YexhYGTxQIKMqcLMLnyekOTkTpJ0/view"
-          class="underline hover:text-gray-500">Guidelines for schools</Link
+          class="underline hover:text-gray-500">Guidelines for schools</a
         >
-        <Link
+        <a
           href="https://drive.google.com/file/d/1MRiPX57JrppZY4gwtKeKeCc0_rZX040P/view"
-          class="underline hover:text-gray-500"
-          >Guidelines for municipalities</Link
+          class="underline hover:text-gray-500">Guidelines for municipalities</a
         >
       </div>
+    </div>
 
-      <!-- Sådan gør du -->
-      <div class="flex flex-col items-center">
-        <h3 class="text-lg font-semibold text-green-700">Sådan gør du</h3>
-        <Link
+    <!-- Sådan gør du -->
+    <div>
+      <h3 class="text-lg font-semibold text-green-700 mb-2">Sådan gør du</h3>
+      <div class="flex flex-col space-y-2">
+        <a
           href="https://drive.google.com/file/d/1i8rKagvbCXk4JciaEg896YUUti3bjLbU/view"
-          target="_blank"
           class="underline hover:text-gray-500"
-          >How to clean up your computer and Drive</Link
+          >How to clean up your computer and Drive</a
         >
-        <Link
+        <a
           href="https://drive.google.com/file/d/1Capnwt-idzQoVtV1jNTM2HeJnvYVNQIi/view"
-          class="underline hover:text-gray-500"
-          >How to clean up your emails</Link
+          class="underline hover:text-gray-500">How to clean up your emails</a
         >
-        <Link
+        <a
           href="https://drive.google.com/file/d/1fN0bgV8R1WAirubd_1QlSH17lYHt6eE_/view"
           class="underline hover:text-gray-500"
-          >How to clean up your smartphone and tablet</Link
+          >How to clean up your smartphone and tablet</a
         >
       </div>
+    </div>
 
-      <!-- Øvelser -->
-      <div class="flex flex-col items-center">
-        <h3 class="text-lg font-semibold text-green-700">Øvelser</h3>
-        <Link
+    <!-- Øvelser -->
+    <div>
+      <h3 class="text-lg font-semibold text-green-700 mb-2">Øvelser</h3>
+      <div class="flex flex-col space-y-2">
+        <a
           href="https://docs.google.com/spreadsheets/d/1LvTHVLLRsCICSQ-FMwtqy1whl1PlQFKy/edit?usp=sharing&ouid=107038803284961691998&rtpof=true&sd=true"
-          target="_blank"
-          class="underline hover:text-gray-500"
-          >Participant data collection 1</Link
+          class="underline hover:text-gray-500">Participant data collection 1</a
         >
-        <Link
+        <a
           href="https://drive.google.com/file/d/1ZUIJl_EztcJmYF7GVDFN1LMPRtqM_7nM/view"
-          class="underline hover:text-gray-500"
-          >Participant data collection 2</Link
+          class="underline hover:text-gray-500">Participant data collection 2</a
         >
-        <Link
+        <a
           href="https://drive.google.com/file/d/1MRiPX57JrppZY4gwtKeKeCc0_rZX040P/view"
-          class="underline hover:text-gray-500">Marketing materials</Link
+          class="underline hover:text-gray-500">Marketing materials</a
         >
       </div>
     </div>
