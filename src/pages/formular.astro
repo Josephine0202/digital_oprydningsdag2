@@ -6,71 +6,99 @@ import Header from "../components/Header.astro";
 ---
 
 <MainLayout>
-  <img src="../assets/images/earth.webp" alt="earth" class="mx-auto mb-8" />
-  <h2 class="text-center text-2xl font-bold mb-6">SOURCER OG MATERIALER</h2>
+  <section
+    id="registrering"
+    class="max-w-lg mx-auto mt-32 mb-32 p-6 border border-[#3C5A14] bg-[#EEEDE5] shadow-md"
+  >
+    <h2 class="text-lg font-bold text-center text-[#3C5A14] mb-8">
+      REGISTRER DIN DIGITALE OPRYDNING
+    </h2>
 
-  <div class="flex justify-between max-w-4xl mx-auto">
-    <!-- Retningslinier -->
-    <div class="w-1/3 text-left">
-      <h3 class="text-lg font-semibold text-green-700 mb-2">Retningslinier</h3>
-      <div class="flex flex-col space-y-2">
-        <a
-          href="https://drive.google.com/file/d/136q24Z0iexgvnWk4Z_GIGAYBtV3D49l4/view"
-          class="underline hover:text-gray-500">Guidelines for individuals</a
+    <form class="space-y-8">
+      <div class="grid gap-8">
+        <input
+          type="text"
+          id="fornavn"
+          name="fornavn"
+          placeholder="Fornavn"
+          class="w-full border-b border-gray-400 focus:outline-none p-2"
+        />
+        <input
+          type="text"
+          id="efternavn"
+          name="efternavn"
+          placeholder="Efternavn"
+          class="w-full border-b border-gray-400 focus:outline-none p-2"
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          class="w-full border-b border-gray-400 focus:outline-none p-2"
+        />
+        <input
+          type="text"
+          id="land"
+          name="land"
+          placeholder="Land"
+          class="w-full border-b border-gray-400 focus:outline-none p-2"
+        />
+        <input
+          type="text"
+          id="organisation"
+          name="organisation"
+          placeholder="Organisationsnavn (valgfrit)"
+          class="w-full border-b border-gray-400 focus:outline-none p-2"
+        />
+      </div>
+
+      <div>
+        <label class="block text-gray-700">Antal deltagere</label>
+        <select
+          class="w-full border border-gray-300 p-2 rounded focus:outline-none"
         >
-        <a
-          href="https://drive.google.com/file/d/1ZUIJl_EztcJmYF7GVDFN1LMPRtqM_7nM/view"
-          class="underline hover:text-gray-500">Guidelines for companies</a
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-gray-700">Antal slettet (i GB)</label>
+        <select
+          class="w-full border border-gray-300 p-2 rounded focus:outline-none"
         >
-        <a
-          href="https://drive.google.com/file/d/1dDw_YexhYGTxQIKMqcLMLnyekOTkTpJ0/view"
-          class="underline hover:text-gray-500">Guidelines for schools</a
-        >
-        <a
-          href="https://drive.google.com/file/d/1MRiPX57JrppZY4gwtKeKeCc0_rZX040P/view"
-          class="underline hover:text-gray-500">Guidelines for municipalities</a
+          <option>0</option>
+          <option>1</option>
+          <option>5</option>
+          <option>10</option>
+        </select>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <input type="checkbox" id="terms" class="w-4 h-4" />
+        <label for="terms" class="text-sm text-gray-700"
+          >*Jeg er enig med Digital Oprydningsdags vilkår & betingelser</label
         >
       </div>
-    </div>
 
-    <!-- Sådan gør du -->
-    <div class="w-1/3 text-left">
-      <h3 class="text-lg font-semibold text-green-700 mb-2">Sådan gør du</h3>
-      <div class="flex flex-col space-y-2">
-        <a
-          href="https://drive.google.com/file/d/1i8rKagvbCXk4JciaEg896YUUti3bjLbU/view"
-          class="underline hover:text-gray-500"
-          >How to clean up your computer and Drive</a
-        >
-        <a
-          href="https://drive.google.com/file/d/1Capnwt-idzQoVtV1jNTM2HeJnvYVNQIi/view"
-          class="underline hover:text-gray-500">How to clean up your emails</a
-        >
-        <a
-          href="https://drive.google.com/file/d/1fN0bgV8R1WAirubd_1QlSH17lYHt6eE_/view"
-          class="underline hover:text-gray-500"
-          >How to clean up your smartphone and tablet</a
+      <div class="flex items-center gap-2">
+        <input type="checkbox" id="newsletter" class="w-4 h-4" />
+        <label for="newsletter" class="text-sm text-gray-700"
+          >Ja tak til nyhedsbreve fra Digital Oprydningsdag</label
         >
       </div>
-    </div>
 
-    <!-- Øvelser -->
-    <div class="w-1/3 text-left">
-      <h3 class="text-lg font-semibold text-green-700 mb-2">Øvelser</h3>
-      <div class="flex flex-col space-y-2">
-        <a
-          href="https://docs.google.com/spreadsheets/d/1LvTHVLLRsCICSQ-FMwtqy1whl1PlQFKy/edit?usp=sharing&ouid=107038803284961691998&rtpof=true&sd=true"
-          class="underline hover:text-gray-500">Participant data collection 1</a
-        >
-        <a
-          href="https://drive.google.com/file/d/1ZUIJl_EztcJmYF7GVDFN1LMPRtqM_7nM/view"
-          class="underline hover:text-gray-500">Participant data collection 2</a
-        >
-        <a
-          href="https://drive.google.com/file/d/1MRiPX57JrppZY4gwtKeKeCc0_rZX040P/view"
-          class="underline hover:text-gray-500">Marketing materials</a
+      <div class="mt-10 flex justify-center">
+        <Button
+          variant="primary"
+          size="medium"
+          class="bg-[#3C5A14] text-white py-5 px-6 rounded-lg hover:bg-green-900 transition"
+          >Registrer</Button
         >
       </div>
-    </div>
-  </div>
+    </form>
+  </section>
 </MainLayout>
