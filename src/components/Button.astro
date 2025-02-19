@@ -1,5 +1,17 @@
 ---
+// Henter parametrene fra Astro.props
+const { variant= "primary" } = Astro.props; 
+
+//Definer den styling (Tailwind classes, der gør sig gældende for alle knapper
+const buttonStyling = "p-5 mb-10 rounded-2xl border-1 border-[#3C5A14] max-w-2xs mx-auto h-fit"; 
+
+//Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter 
+const variantClasses = {
+    "primary": "bg-[#3C5A14] text-[#EEEDE5] hover:bg-[#EEEDE5] hover:text-[#3C5A14] hover:border-1 ",
+    "secondary": "text-[#EEEDE5] border-1 border-[#EEEDE5]  hover:bg-[#EEEDE5] hover:text-[#3C5A14]"
+};
+
 ---
-<div>
-    <button class="bg-[#3C5A14] border-1 text-[#EEEDE5] p-5 mb-10 rounded-2xl hover:bg-[#EEEDE5] hover:text-[#3C5A14] hover:border-1 border-[#3C5A14]"><slot /></button>
-</div>
+
+<!--Sæt classes for den pågældende knap sammen ved hjælp af Astros class:list -->
+<button class:list={[buttonStyling, variantClasses[variant]]}><slot /></button>
