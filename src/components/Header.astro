@@ -3,18 +3,22 @@ import Link from "../components/Link.astro";
 import logo_sort from "../assets/images/dcd_logo_sort.png";
 ---
 
-<header class="bg-[#EEEDE5] border-b border-black p-4 relative">
+<header class="bg-[#EEEDE5] border-b border-black p-4 relative z-20">
   <div class="container mx-auto flex justify-between items-center px-4 lg:px-0">
-   <div id="logo" class="ml-[-10px] lg:ml-[-40px]">
-  <Link href="/">
-    <img src={logo_sort.src} alt="Digital Cleanup Day Logo" class="h-12" />
-  </Link>
-</div>
+    <div id="logo" class="ml-[-10px] lg:ml-[-40px]">
+      <Link href="/">
+        <img src={logo_sort.src} alt="Digital Cleanup Day Logo" class="h-12" />
+      </Link>
+    </div>
 
     <nav class="hidden lg:flex space-x-8 text-black font-medium">
       <Link href="/howto" class="hover:opacity-70 transition">How to</Link>
-      <Link href="/ressourcer" class="hover:opacity-70 transition">Ressourcer</Link>
-      <Link href="/formular" class="hover:opacity-70 transition">Register dit bidrag</Link>
+      <Link href="/ressourcer" class="hover:opacity-70 transition"
+        >Ressourcer</Link
+      >
+      <Link href="/formular" class="hover:opacity-70 transition"
+        >Register dit bidrag</Link
+      >
     </nav>
 
     <button class="lg:hidden" id="menu-toggle">
@@ -26,15 +30,24 @@ import logo_sort from "../assets/images/dcd_logo_sort.png";
 
   <nav
     id="mobile-menu"
-    class="absolute top-0 right-0 w-2/3 h-auto max-h-[80vh] bg-[#EEEDE5] border-l border-b border-black flex flex-col p-6 shadow-lg lg:hidden overflow-y-auto"
+    class="absolute top-0 right-0 w-2/3 h-auto max-h-[80vh] bg-[#EEEDE5] border-l border-b border-black flex flex-col p-6 shadow-lg lg:hidden overflow-y-auto z-30"
   >
     <div class="flex justify-end">
       <button id="close-menu" class="text-2xl">&times;</button>
     </div>
     <div class="flex flex-col space-y-6 mt-4">
-      <Link href="/howto" class="block hover:opacity-70 transition p-4 border-b">How to</Link>
-      <Link href="/ressourcer" class="block hover:opacity-70 transition p-4 border-b">Ressourcer</Link>
-      <Link href="/formular" class="block hover:opacity-70 transition p-4 border-b">Register dit bidrag</Link>
+      <Link href="/howto" class="block hover:opacity-70 transition p-4 border-b"
+        >How to</Link
+      >
+      <Link
+        href="/ressourcer"
+        class="block hover:opacity-70 transition p-4 border-b">Ressourcer</Link
+      >
+      <Link
+        href="/formular"
+        class="block hover:opacity-70 transition p-4 border-b"
+        >Register dit bidrag</Link
+      >
     </div>
   </nav>
 
@@ -54,4 +67,3 @@ import logo_sort from "../assets/images/dcd_logo_sort.png";
       });
   </script>
 </header>
-
