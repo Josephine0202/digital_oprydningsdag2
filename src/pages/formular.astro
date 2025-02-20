@@ -1,56 +1,104 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import Header from '../components/Header.astro';
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import Header from "../components/Header.astro";
 ---
 
 <MainLayout>
-    <section id="registrering" class="max-w-lg mx-auto mt-32 mb-32 p-6 border border-[#3C5A14] bg-[#EEEDE5] shadow-md">
-        <h2 class="text-lg font-bold text-center text-[#3C5A14] mb-8">REGISTRER DIN DIGITALE OPRYDNING</h2>
-        
-        <form class="space-y-8">
-            <div class="grid gap-8">
-                <input type="text" id="fornavn" name="fornavn" placeholder="Fornavn" class="w-full border-b border-gray-400 focus:outline-none p-2">
-                <input type="text" id="efternavn" name="efternavn" placeholder="Efternavn" class="w-full border-b border-gray-400 focus:outline-none p-2">
-                <input type="email" id="email" name="email" placeholder="Email" class="w-full border-b border-gray-400 focus:outline-none p-2">
-                <input type="text" id="land" name="land" placeholder="Land" class="w-full border-b border-gray-400 focus:outline-none p-2">
-                <input type="text" id="organisation" name="organisation" placeholder="Organisationsnavn (valgfrit)" class="w-full border-b border-gray-400 focus:outline-none p-2">
-            </div>
+  <section
+    id="registrering"
+    class="max-w-lg mx-auto mt-32 mb-32 p-6 border border-[#3C5A14] bg-[#EEEDE5] shadow-md"
+  >
+    <h2 class="text-lg font-bold text-center text-[#3C5A14] mb-8">
+      REGISTRER DIN DIGITALE OPRYDNING
+    </h2>
 
-            <div>
-                <label class="block text-gray-700">Antal deltagere</label>
-                <select class="w-full border border-gray-300 p-2 rounded focus:outline-none">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-            </div>
+    <form class="space-y-8">
+      <div class="grid gap-8">
+        <input
+          type="text"
+          id="fornavn"
+          name="fornavn"
+          placeholder="Fornavn"
+          class="w-full border-b border-gray-400 focus:outline-none p-2"
+        />
+        <input
+          type="text"
+          id="efternavn"
+          name="efternavn"
+          placeholder="Efternavn"
+          class="w-full border-b border-gray-400 focus:outline-none p-2"
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          class="w-full border-b border-gray-400 focus:outline-none p-2"
+        />
+        <input
+          type="text"
+          id="land"
+          name="land"
+          placeholder="Land"
+          class="w-full border-b border-gray-400 focus:outline-none p-2"
+        />
+        <input
+          type="text"
+          id="organisation"
+          name="organisation"
+          placeholder="Organisationsnavn (valgfrit)"
+          class="w-full border-b border-gray-400 focus:outline-none p-2"
+        />
+      </div>
 
-            <div>
-                <label class="block text-gray-700">Antal slettet (i GB)</label>
-                <select class="w-full border border-gray-300 p-2 rounded focus:outline-none">
-                    <option>0</option>
-                    <option>1</option>
-                    <option>5</option>
-                    <option>10</option>
-                </select>
-            </div>
+      <div>
+        <label class="block text-gray-700">Antal deltagere</label>
+        <select
+          class="w-full border border-gray-300 p-2 rounded focus:outline-none"
+        >
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </div>
 
-            <div class="flex items-center gap-2">
-                <input type="checkbox" id="terms" class="w-4 h-4">
-                <label for="terms" class="text-sm text-gray-700">*Jeg er enig med Digital Oprydningsdags vilkår & betingelser</label>
-            </div>
-            
-            <div class="flex items-center gap-2">
-                <input type="checkbox" id="newsletter" class="w-4 h-4">
-                <label for="newsletter" class="text-sm text-gray-700">Ja tak til nyhedsbreve fra Digital Oprydningsdag</label>
-            </div>
+      <div>
+        <label class="block text-gray-700">Antal slettet (i GB)</label>
+        <select
+          class="w-full border border-gray-300 p-2 rounded focus:outline-none"
+        >
+          <option>0</option>
+          <option>1</option>
+          <option>5</option>
+          <option>10</option>
+        </select>
+      </div>
 
-            <div class="mt-10 flex justify-center">
-                <Button variant="primary" size="medium" class="bg-[#3C5A14] text-white py-5 px-6 rounded-lg hover:bg-green-900 transition">Registrer</Button>
-            </div>
-        </form>
-    </section>
+      <div class="flex items-center gap-2">
+        <input type="checkbox" id="terms" class="w-4 h-4" />
+        <label for="terms" class="text-sm text-gray-700"
+          >*Jeg er enig med Digital Oprydningsdags vilkår & betingelser</label
+        >
+      </div>
+
+      <div class="flex items-center gap-2">
+        <input type="checkbox" id="newsletter" class="w-4 h-4" />
+        <label for="newsletter" class="text-sm text-gray-700"
+          >Ja tak til nyhedsbreve fra Digital Oprydningsdag</label
+        >
+      </div>
+
+      <div class="mt-10 flex justify-center">
+        <Button
+          variant="primary"
+          size="medium"
+          class="bg-[#3C5A14] text-white py-5 px-6 rounded-lg hover:bg-green-900 transition"
+          >Registrer</Button
+        >
+      </div>
+    </form>
+  </section>
 </MainLayout>
