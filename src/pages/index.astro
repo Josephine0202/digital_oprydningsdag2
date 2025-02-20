@@ -5,13 +5,20 @@ import Link from '../components/Link.astro';
 import Header from '../components/Header.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
+import hero from "../assets/images/herohand.png";
+import co2 from "../assets/images/co2icon.svg";
+import group from "../assets/images/groupicon.svg";
+import document from "../assets/images/documenticon.svg";
 ---
 <MainLayout title="Titel">
 
 	
-	<section class="h-100 bg-lime-800 text-center mb-10">
-		<h1 class="pt-30">DIGITAL OPRYDNINGSDAG</h1>
+	<section class="relative w-auto h-auto mb-10 overflow-hidden font-bold text-2xl text-[#3C5A14]">
+		<img src={hero.src} alt="Herosection billede h-auto" class="w-full h-full object-cover" />
+		<div class="absolute inset-0 flex items-center justify-center">
+		<h1>DIGITAL OPRYDNINGSDAG</h1>
 		<h2>15. MARTS 2025</h2>
+	</div>
 	</section>
 	<section>
 		<h2 class="text-[#3C5A14] text-2xl mb-7">Hvad er digital oprydningsdag?</h2>
@@ -49,9 +56,26 @@ import thumbsup from "../assets/images/thumbsup.png";
 <h2 class="pt-30 text-[#EEEDE5] text-4xl mb-5">STØT VORES ARBEJDE</h2>
 <Button variant="secondary">Registrer dit bidrag</Button>
 	</section>
-	<section>
-		<h2 class="text-[#3C5A14] text-2xl mb-7">Digital oprydningsdag i tal</h2>
-		
+	<section class="">
+		<h2 class="text-[#3C5A14] text-2xl mb-7 text-center">DIGITAL OPRYDNINGSDAG I TAL</h2>
+		<article class=" max-w-4xl mx-auto mb-10  grid sm:grid-cols-3">
+		<div>
+			<img src={group.src} alt="gruppe ikon" class="h-15"  />
+			<h3> <span class="font-bold">1,184,747 </span><br>
+				deltagere</h3>
+		</div>
+		<div>
+			<img src={document.src} alt="document ikon" class="h-15"  />
+			<h3> <span class="font-bold">14.5 M GB</span> <br>
+				slettet data</h3>
+		</div>
+		<div>
+			<img src={co2.src} alt="Co2 sky ikon" class="h-15"  />
+			<h3> <span class="font-bold">3,625 tons Co2 </span> <br>
+				produktion forbygget årligt</h3>
+		</div>
+	</article>
+
 		<p>Siden 2020 har 175 forskellige lande og territorier deltaget i Digital Cleanup Day. Næsten 1,2 millioner mennesker har slettet over 14,5 millioner GB data, hvilket har forhindret den årlige produktion af omkring 3.625 tons CO2.</p>
 
 	</section>
