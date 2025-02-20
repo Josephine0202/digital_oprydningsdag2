@@ -7,92 +7,89 @@ import earth from "../assets/images/earth.png";
 ---
 
 <MainLayout>
-  <div>
+  <div class="fixed top-0 left-0 w-screen h-screen">
     <div
-      class="w-full h-screen bg-cover bg-center"
+      class="w-full h-full bg-cover bg-center"
       style={{ backgroundImage: `url(${earth.src})` }}
     >
     </div>
+  </div>
 
-    <h2
-      class="text-2xl font-bold mb-8 text-left mt-10 text-[#3C5A14] pl-6 md:pl-12"
-    >
-      RESSOURCER OG MATERIALER
-    </h2>
+  <h2
+    class="text-2xl font-bold mb-8 mt-10 text-[#3C5A14] pl-6 md:pl-12 text-center md:text-left"
+  >
+    RESSOURCER OG MATERIALER
+  </h2>
 
-    <div
-      class="max-w-5xl mx-auto text-gray-900 space-y-8 md:space-y-0 md:flex md:justify-center md:space-x-16 my-10"
-    >
-      {/* Retningslinier */}
-      <div class="w-full md:w-1/3 text-center">
-        <h3 class="text-lg font-semibold text-[#3C5A14] mb-4">
-          Retningslinier
-        </h3>
-        <div class="space-y-2">
-          <a
-            href="https://drive.google.com/file/d/136q24Z0iexgvnWk4Z_GIGAYBtV3D49l4/view?usp=sharing"
-            class="underline hover:text-gray-500 block"
-            >Guidelines for individuals</a
-          >
-          <a
-            href="https://drive.google.com/file/d/1ZUIJl_EztcJmYF7GVDFN1LMPRtqM_7nM/view"
-            class="underline hover:text-gray-500 block"
-            >Guidelines for companies</a
-          >
-          <a
-            href="https://drive.google.com/file/d/1dDw_YexhYGTxQIKMqcLMLnyekOTkTpJ0/view"
-            class="underline hover:text-gray-500 block"
-            >Guidelines for schools</a
-          >
-          <a
-            href="https://drive.google.com/file/d/1MRiPX57JrppZY4gwtKeKeCc0_rZX040P/view"
-            class="underline hover:text-gray-500 block"
-            >Guidelines for municipalities</a
-          >
-        </div>
+  <div
+    class="max-w-5xl mx-auto text-gray-900 space-y-8 md:space-y-0 md:flex md:justify-center md:space-x-16 my-20"
+  >
+    {/* Retningslinier */}
+    <div class="w-full md:w-1/3 text-center">
+      <h3 class="text-lg font-semibold text-[#3C5A14] mb-4">Retningslinier</h3>
+      <div class="space-y-2">
+        <a
+          href="https://drive.google.com/file/d/136q24Z0iexgvnWk4Z_GIGAYBtV3D49l4/view?usp=sharing"
+          class="underline hover:text-gray-500 block"
+          >Guidelines for individuals</a
+        >
+        <a
+          href="https://drive.google.com/file/d/1ZUIJl_EztcJmYF7GVDFN1LMPRtqM_7nM/view"
+          class="underline hover:text-gray-500 block"
+          >Guidelines for companies</a
+        >
+        <a
+          href="https://drive.google.com/file/d/1dDw_YexhYGTxQIKMqcLMLnyekOTkTpJ0/view"
+          class="underline hover:text-gray-500 block">Guidelines for schools</a
+        >
+        <a
+          href="https://drive.google.com/file/d/1MRiPX57JrppZY4gwtKeKeCc0_rZX040P/view"
+          class="underline hover:text-gray-500 block"
+          >Guidelines for municipalities</a
+        >
       </div>
+    </div>
 
-      {/* Sådan gør du */}
-      <div class="w-full md:w-1/3 text-center">
-        <h3 class="text-lg font-semibold text-[#3C5A14] mb-4">Sådan gør du</h3>
-        <div class="space-y-2">
-          <a
-            href="https://drive.google.com/file/d/1i8rKagvbCXk4JciaEg896YUUti3bjLbU/view"
-            class="underline hover:text-gray-500 block"
-            >How to clean up your computer and Drive</a
-          >
-          <a
-            href="https://drive.google.com/file/d/1Capnwt-idzQoVtV1jNTM2HeJnvYVNQIi/view"
-            class="underline hover:text-gray-500 block"
-            >How to clean up your emails</a
-          >
-          <a
-            href="https://drive.google.com/file/d/1fN0bgV8R1WAirubd_1QlSH17lYHt6eE_/view"
-            class="underline hover:text-gray-500 block"
-            >How to clean up your smartphone and tablet</a
-          >
-        </div>
+    {/* Sådan gør du */}
+    <div class="w-full md:w-1/3 text-center">
+      <h3 class="text-lg font-semibold text-[#3C5A14] mb-4">Sådan gør du</h3>
+      <div class="space-y-2">
+        <a
+          href="https://drive.google.com/file/d/1i8rKagvbCXk4JciaEg896YUUti3bjLbU/view"
+          class="underline hover:text-gray-500 block"
+          >How to clean up your computer and Drive</a
+        >
+        <a
+          href="https://drive.google.com/file/d/1Capnwt-idzQoVtV1jNTM2HeJnvYVNQIi/view"
+          class="underline hover:text-gray-500 block"
+          >How to clean up your emails</a
+        >
+        <a
+          href="https://drive.google.com/file/d/1fN0bgV8R1WAirubd_1QlSH17lYHt6eE_/view"
+          class="underline hover:text-gray-500 block"
+          >How to clean up your smartphone and tablet</a
+        >
       </div>
+    </div>
 
-      {/* Øvelser */}
-      <div class="w-full md:w-1/3 text-center">
-        <h3 class="text-lg font-semibold text-[#3C5A14] mb-4">Øvelser</h3>
-        <div class="space-y-2">
-          <a
-            href="https://docs.google.com/spreadsheets/d/1LvTHVLLRsCICSQ-FMwtqy1whl1PlQFKy/edit?gid=631660431#gid=631660431"
-            class="underline hover:text-gray-500 block"
-            >Participant data collection 1</a
-          >
-          <a
-            href="https://docs.google.com/spreadsheets/d/1LvTHVLLRsCICSQ-FMwtqy1whl1PlQFKy/edit?gid=631660431#gid=631660431"
-            class="underline hover:text-gray-500 block"
-            >Participant data collection 2</a
-          >
-          <a
-            href="https://trello.com/b/YzROvY3M/digital-cleanup-day"
-            class="underline hover:text-gray-500 block">Marketing materials</a
-          >
-        </div>
+    {/* Øvelser */}
+    <div class="w-full md:w-1/3 text-center">
+      <h3 class="text-lg font-semibold text-[#3C5A14] mb-4">Øvelser</h3>
+      <div class="space-y-2">
+        <a
+          href="https://docs.google.com/spreadsheets/d/1LvTHVLLRsCICSQ-FMwtqy1whl1PlQFKy/edit?gid=631660431#gid=631660431"
+          class="underline hover:text-gray-500 block"
+          >Participant data collection 1</a
+        >
+        <a
+          href="https://docs.google.com/spreadsheets/d/1LvTHVLLRsCICSQ-FMwtqy1whl1PlQFKy/edit?gid=631660431#gid=631660431"
+          class="underline hover:text-gray-500 block"
+          >Participant data collection 2</a
+        >
+        <a
+          href="https://trello.com/b/YzROvY3M/digital-cleanup-day"
+          class="underline hover:text-gray-500 block">Marketing materials</a
+        >
       </div>
     </div>
   </div>
