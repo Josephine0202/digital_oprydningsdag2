@@ -11,17 +11,17 @@ import document from "../assets/images/documenticon.svg";
 
 <MainLayout title="Digital Oprydningsdag">
   <section class="relative w-full h-auto mb-24">
-    <img src={hero.src} alt="Hero billede" class="w-full object-cover" />
+    <img src={hero.src} alt="Hero billede" class="w-full sm:h-screen object-cover" />
     <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-[#3C5A14] font-bold">
-      <h1 class="text-7xl tracking-wider mb-10">DIGITAL OPRYDNINGSDAG</h1>
-      <h2 class="text-4xl tracking-wider">15. MARTS 2025</h2>
+      <h1 class=" text-3xl md:text-7xl tracking-wider mb-10">DIGITAL OPRYDNINGSDAG</h1>
+      <h2 class="text-2xl md:text-4xl tracking-wider">15. MARTS 2025</h2>
     </div>
   </section>
 
   <section class="max-w-5xl mx-auto mb-24 px-6 flex flex-col md:flex-row md:items-center gap-10">
     <div class="w-full md:w-2/3">
-      <h2 class="text-[#3C5A14] text-3xl font-bold mb-6">Hvad er Digital Oprydningsdag?</h2>
-      <p class="text-lg">
+      <h2 class="text-[#3C5A14] text-2xl font-bold mb-6">Hvad er Digital Oprydningsdag?</h2>
+      <p class="text-md">
         Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day.
         Nu i sit femte år og arrangeret af Let's Do It World, har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre både enkeltpersoner og virksomheder til at rydde op og omstrukturere deres online tilstedeværelse.
       </p>
@@ -33,15 +33,15 @@ import document from "../assets/images/documenticon.svg";
 
   <section class="max-w-5xl mx-auto mb-24 px-6">
     <p class="italic text-lg">Vidste du..?</p>
-    <h2 class="text-[#3C5A14] text-3xl font-bold mb-6">Fakta om digitalt affald</h2>
+    <h2 class="text-[#3C5A14] text-2xl font-bold mb-6">Fakta om digitalt affald</h2>
     <div class="grid md:grid-cols-2 gap-12">
-      <ul class="border border-black p-6 space-y-4 bg-white">
+      <ul class="border border-black p-6 space-y-4 list-disc bg-white boxfadeleft">
         <li>Det kræver mere energi at udvinde Bitcoin, end hele New Zealand forbruger på et år!</li>
         <li>På blot ét år (2007) blev der skabt én zettabyte data globalt.</li>
         <li>I 2022 blev omkring 70 millioner servere brugt til at lagre data.</li>
         <li>99 % af al data er blevet skabt inden for de sidste 10 år.</li>
       </ul>
-      <ul class="border border-black p-6 space-y-4 bg-white">
+      <ul class="border border-black p-6 space-y-4 list-disc bg-white boxfaderight">
         <li>Den ubegrænsede dataforbrug i dag kræver tre gange mere energi end alle verdens solpaneler tilsammen kan producere.</li>
         <li>Internettet udleder mere end 900 millioner tons CO₂ hvert år.</li>
         <li>90 % af al data tilgås aldrig igen efter tre måneder.</li>
@@ -50,34 +50,85 @@ import document from "../assets/images/documenticon.svg";
     </div>
   </section>
 
-  <section class="bg-[#3C5A14] py-24 w-full text-center text-[#EEEDE5]">
-    <h2 class="text-4xl font-bold mb-10 mt-10 uppercase tracking-widest transition-colors duration-300 hover:text-white hover:fill-white">
+  <section class="bg-[#3C5A14] py-12 md:py-24 w-full text-center text-[#EEEDE5]">
+    <h2 class=" text-3xl md:text-6xl font-bold mb-10 mt-10 uppercase tracking-widest text-transparent" style="-webkit-text-stroke: 1px #EEEDE5;">
       STØT VORES ARBEJDE
     </h2>
     <Button variant="secondary">Registrer dit bidrag</Button>
   </section>
 
   <section class="max-w-5xl mx-auto text-left my-24 px-6">
-    <h2 class="text-[#3C5A14] text-3xl font-bold mb-6">DIGITAL OPRYDNINGSDAG I TAL</h2>
-    <div class="grid md:grid-cols-3 gap-16">
-      <div class="text-left">
-        <img src={group.src} alt="Gruppe ikon" class="h-16 mb-2" />
+    <h2 class="text-[#3C5A14] text-2xl sm:text-3xl font-bold mb-8 text-center md:text-left">DIGITAL OPRYDNINGSDAG I TAL</h2>
+    <div class="grid md:grid-cols-3 gap-10 mb-15 ">
+      <div class="text-center ikon1">
+        <img src={group.src} alt="Gruppe ikon" class="h-10 md:h-16 mb-2 mx-auto" />
         <h3 class="text-xl font-bold">1,184,747</h3>
         <p>Deltagere</p>
       </div>
-      <div class="text-left">
-        <img src={document.src} alt="Dokument ikon" class="h-16 mb-2" />
+      <div class="text-center ikon2">
+        <img src={document.src} alt="Dokument ikon" class="h-10 md:h-16 mb-2 mx-auto" />
         <h3 class="text-xl font-bold">14.5 M GB</h3>
         <p>Slettet data</p>
       </div>
-      <div class="text-left">
-        <img src={co2.src} alt="CO₂ ikon" class="h-16 mb-2" />
+      <div class="text-center ikon3">
+        <img src={co2.src} alt="CO₂ ikon" class="h-10 md:h-16 mb-2 mx-auto" />
         <h3 class="text-xl font-bold">3,625 tons CO₂</h3>
         <p>Forhindret produktion årligt</p>
       </div>
     </div>
-    <p class="mt-6 max-w-3xl">
+    <div class="max-w-2xl">
+    <p>
       Siden 2020 har 175 forskellige lande og territorier deltaget i Digital Cleanup Day. Næsten 1,2 millioner mennesker har slettet over 14,5 millioner GB data, hvilket har forhindret den årlige produktion af omkring 3.625 tons CO₂.
     </p>
+  </div>
   </section>
 </MainLayout>
+
+<script>
+
+  import { inView } from "motion";
+  
+  const ikon1 = document.querySelector(".ikon1");
+    
+    inView(ikon1, () => {
+    
+      ikon1.classList.add("animate__animated", "animate__bounceInUp");
+    
+    }); 
+
+    const ikon2 = document.querySelector(".ikon2");
+    
+    inView(ikon2, () => {
+    
+      ikon2.classList.add("animate__animated", "animate__bounceInUp");
+    
+    }); 
+
+    const ikon3 = document.querySelector(".ikon3");
+    
+    inView(ikon3, () => {
+    
+      ikon3.classList.add("animate__animated", "animate__bounceInUp");
+    
+    });
+
+    const boxfaderight = document.querySelector(".boxfaderight");
+    
+    inView(boxfaderight, () => {
+    
+      boxfaderight.classList.add("animate__animated", "animate__fadeInRight");
+    
+    });
+
+    const boxfadeleft = document.querySelector(".boxfadeleft");
+    
+    inView(boxfadeleft, () => {
+    
+      boxfadeleft.classList.add("animate__animated", "animate__fadeInLeft");
+    
+    });
+
+
+    
+  
+  </script>
