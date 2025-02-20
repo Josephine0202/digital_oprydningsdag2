@@ -7,22 +7,25 @@ import earth from "../assets/images/earth.png";
 ---
 
 <MainLayout>
-  <img
-    src={earth.src}
-    alt="Digital Cleanup Day Logo"
-    class="w-full h-screen object-cover"
-  />
-  <section class="my-16">
+  <div>
+    <div
+      class="w-full h-screen bg-cover bg-center"
+      style={{ backgroundImage: `url(${earth.src})` }}
+    >
+    </div>
+
     <h2
-      class="text-2xl font-bold text-[#3C5A14] mb-8 font-bold mb-6 pl-10 text-left"
+      class="text-2xl font-bold mb-8 text-left mt-10 text-[#3C5A14] pl-6 md:pl-12"
     >
       RESSOURCER OG MATERIALER
     </h2>
 
-    <div class="flex justify-center space-x-16 max-w-5xl mx-auto text-gray-900">
-      <!-- Retningslinier -->
-      <div class="w-1/3 text-center">
-        <h3 class="text-lg font-semibold mb-4 text-[#3C5A14]">
+    <div
+      class="max-w-5xl mx-auto text-gray-900 space-y-8 md:space-y-0 md:flex md:justify-center md:space-x-16 my-10"
+    >
+      {/* Retningslinier */}
+      <div class="w-full md:w-1/3 text-center">
+        <h3 class="text-lg font-semibold text-[#3C5A14] mb-4">
           Retningslinier
         </h3>
         <div class="space-y-2">
@@ -49,9 +52,9 @@ import earth from "../assets/images/earth.png";
         </div>
       </div>
 
-      <!-- Sådan gør du -->
-      <div class="w-1/3 text-center">
-        <h3 class="text-[#3C5A14] text-lg font-semibold mb-4">Sådan gør du</h3>
+      {/* Sådan gør du */}
+      <div class="w-full md:w-1/3 text-center">
+        <h3 class="text-lg font-semibold text-[#3C5A14] mb-4">Sådan gør du</h3>
         <div class="space-y-2">
           <a
             href="https://drive.google.com/file/d/1i8rKagvbCXk4JciaEg896YUUti3bjLbU/view"
@@ -71,8 +74,8 @@ import earth from "../assets/images/earth.png";
         </div>
       </div>
 
-      <!-- Øvelser -->
-      <div class="w-1/3 text-center">
+      {/* Øvelser */}
+      <div class="w-full md:w-1/3 text-center">
         <h3 class="text-lg font-semibold text-[#3C5A14] mb-4">Øvelser</h3>
         <div class="space-y-2">
           <a
@@ -92,5 +95,5 @@ import earth from "../assets/images/earth.png";
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </MainLayout>
